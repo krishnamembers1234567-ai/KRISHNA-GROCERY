@@ -1,0 +1,8 @@
+{
+  "name": "Copy of KRISHNA - Premium Kirana Delivery",
+  "description": "A high-end, Swiggy-like grocery delivery experience focused on premium kirana products with AI-powered features for recipes and store discovery.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

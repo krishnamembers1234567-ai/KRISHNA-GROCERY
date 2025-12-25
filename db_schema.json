@@ -1,0 +1,47 @@
+
+{
+  "users": {
+    "id": "uuid",
+    "name": "string",
+    "phone": "string",
+    "role": "customer | partner | admin",
+    "wallet_balance": "number",
+    "created_at": "timestamp"
+  },
+  "addresses": {
+    "id": "uuid",
+    "user_id": "uuid",
+    "tag": "Home | Office | Other",
+    "details": "string",
+    "lat_lng": "object"
+  },
+  "products": {
+    "id": "uuid",
+    "name": "string",
+    "category_id": "uuid",
+    "price": "number",
+    "original_price": "number",
+    "stock": "number",
+    "weight": "string",
+    "image": "url",
+    "description": "text"
+  },
+  "orders": {
+    "id": "uuid",
+    "user_id": "uuid",
+    "partner_id": "uuid | null",
+    "items": "array",
+    "total": "number",
+    "status": "pending | accepted | out_for_delivery | delivered | cancelled",
+    "payment_method": "upi | card | cod",
+    "payment_status": "paid | pending",
+    "created_at": "timestamp"
+  },
+  "transactions": {
+    "id": "uuid",
+    "user_id": "uuid",
+    "amount": "number",
+    "type": "credit | debit",
+    "description": "string"
+  }
+}
